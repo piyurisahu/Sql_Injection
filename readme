@@ -1,1 +1,4 @@
-it is simple example of sql Injection
+Example. While working with JDBC for database connectivity, we can use Statement or PreparedStatement to execute queries.
+
+
+If you are using JDBC API to run queries on database, you should know that PreparedStatement is the better choice than Statement. However since JDBC API allows only one literal for one “?” parameter, PreparedStatement doesn’t work for IN clause queries.
